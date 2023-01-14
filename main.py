@@ -1,6 +1,7 @@
 import random
 from graphAdjMatrix import GraphAdjMatrix
-from stack_queue import *
+from stack import *
+from queue import *
 from table import Table
 
 if __name__ == '__main__':

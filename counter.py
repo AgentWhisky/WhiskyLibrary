@@ -5,13 +5,22 @@ class Counter(dict):
         return self.setdefault(key, 0)
 
     # Increment key in counter
-    def increment(self, key):
+    def inc(self, key):
         self.__setitem__(key, self.__getitem__(key) + 1)
 
     # Increment all keys in counter
-    def incrementAll(self):
+    def incAll(self):
         for key in self.keys():
             self.__setitem__(key, self.__getitem__(key) + 1)
+
+    # Decrement key in counter
+    def dec(self, key):
+        self.__setitem__(key, self.__getitem__(key) - 1)
+
+    # Decrement all keys in counter
+    def decAll(self):
+        for key in self.keys():
+            self.__setitem__(key, self.__getitem__(key) - 1)
 
     # Reset key in counter
     def reset(self, key):
